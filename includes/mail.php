@@ -9,6 +9,6 @@
 
 		mail("omkarpathak.comp@mmcoe.edu.in","New Message from: " . $name . "(". $email ." )" ,$comment);
 
-		echo 'Thank You for contacting me! Will be reaching to you shortly.';
+		echo 'Thank You for contacting me! I\'ll be reaching to you shortly.';
 	}
 ?>

@@ -1,8 +1,4 @@
 
-                    </div><!--  /.page-content-wrapper -->
-                </div><!--  /.container-fluid -->
-            </div><!--  /.row -->
-        </div><!--  /.col-md-12 -->
         <!-- /#page-content-wrapper -->
 	</div><!-- /.wrapper -->
     <!-- Content Section END -->
@@ -28,22 +24,59 @@
           });
     });
 
-    function link(id) {
-          //alert(id);
-         
-          $.ajax({
-            dataType: "json",
-            url: "retrieveData.php",
-            type: "POST",
-            data:{id:id},
-            success: function(data){
-              //alert(data);
-              document.getElementById("postTitle").innerHTML = data.postTitle;
-              document.getElementById("postAuthor").innerHTML = data.postAuthor;
-              document.getElementById("postContent").innerHTML = data.postContent;
-            }       
-           });
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
         }
+      });
+    });
+
+    $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage'], #home a[href='#python']").on('click', function(event) {
+
+           // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+            } // End if
+          });
+        })
+
+      function link(id) {
+                //alert(id);
+               
+                $.ajax({
+                  dataType: "json",
+                  url: "retrieveData.php",
+                  type: "POST",
+                  data:{id:id},
+                  success: function(data){
+                    //alert(data);
+                    document.getElementById("postTitle").innerHTML = data.postTitle;
+                    document.getElementById("postAuthor").innerHTML = data.postAuthor;
+                    document.getElementById("postContent").innerHTML = data.postContent;
+                  }       
+                 });
+              }
     </script>
 
 </body>

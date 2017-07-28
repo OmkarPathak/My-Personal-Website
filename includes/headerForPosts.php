@@ -1,5 +1,6 @@
 <?php 
     include('connect.php');
+    include('../includes/functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,9 @@
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/customForPages.css" rel="stylesheet">
-    <link href="../css/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10">
@@ -39,24 +42,10 @@
                         </div><!-- ./navbar-header-->
                         <div id="navbar" class="navbar-collapse collapse">
                               <ul class="nav navbar-nav" id="navbar-links">
-                                    <?php 
-                                        $query = 'SELECT * FROM menuforposts';
-                                        $result = $con->query($query);
-                                        while($row = $result->fetch_assoc()){
-                                    ?>
-                                        <li>
-                                            <a href="<?php echo $row['menuforpostsLink'] ?>" id="<?php echo $row['menuforpostsLink'] ?>"><?php echo $row['menuforpostsName']; ?></a>
-                                        </li>
-                                        <?php } ?>
+                                    <?php
+                                        getMenu('menuforaboutme') 
+                                     ?>
                               </ul>
                         </div><!--/.nav-collapse -->
                   </div><!-- ./container-->
                 </nav>
-
-
-    <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   <br>
