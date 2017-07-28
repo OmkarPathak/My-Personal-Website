@@ -1,0 +1,8 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW PWPROTECTID:uhyQyVaXyr
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/u837360009/public_html/admin/.htpasswd
+Require user omkarpathak27
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE uhyQyVaXyr:PWPROTECTID
+

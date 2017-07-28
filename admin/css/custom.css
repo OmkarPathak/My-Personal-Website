@@ -1,0 +1,193 @@
+section{
+	padding-bottom: 2%;
+	padding-top: 3.5%;
+}
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	section{
+		margin-bottom: 5%;
+		padding-top: 10%;
+	}
+
+}
+/*--------------------------------------------------------  NAVBAR/HEADER   ---------------------------------------------------*/
+.header{
+	height:70vh;
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../images/Python_logo.png);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	position:relative;
+	margin-top:40px;
+}
+
+.navbar-default .navbar-nav  > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover {
+    color: #f4511e;
+}
+
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background: #FF7F50;
+ }
+
+#navbar-links{
+	text-transform: uppercase;
+}
+
+.jumbotron { 
+   	margin-top: 3%;
+	background-color: #FF7F50; /* Orange */
+	color: #ffffff;
+}
+
+#jumbotron-button{
+	color: black;
+}
+
+#jumbotron-button:hover{
+	color: #FF7F50;
+}
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	.jumbotron { 
+		padding-top:20%; 
+	   	margin-top: 3%;
+		background-color: #FF7F50; /* Orange */
+		color: #ffffff;
+	}
+}
+
+.glyphicon-huge {
+	font-size: 150px;
+	color: #FF7F50;
+}
+
+.add-space-bottom{
+	margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------------*/
+
+#portfolio{
+	background-color: #f6f6f6;
+	padding-bottom: 2%;
+}
+
+.thumbnail{        
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+
+.fixed-image{
+	width: 100%;
+	height: 225px;
+	display: block;
+}
+
+#portfolio .btn {
+	margin: 15px 0;
+	background-color: #FF7F50;
+	color: #fff;
+}
+
+#portfolio .btn:hover{
+	border: 1px solid #FF7F50;
+	background-color: white;
+	color: #f4511e;
+}
+
+.panel {
+	border: 1px solid #FF7F50; 
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+#portfolio .panel-heading {
+	color: #fff !important;
+	background-color: #FF7F50 !important;
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+	background-color: #fff !important;
+}
+
+/* ------------------------------------------------------------  SLIDER --------------------------------------------------------------------*/.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* -------------------------------------------------------------------------- PYTHON --------------------------------------------------------------------------*/
+#python .panel-heading{
+	color: #fff !important;
+	background-color: #FF7F50 !important;
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#python .panel {
+	border: 1px solid #FF7F50; 
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+
+#python .panel-heading a{
+	text-decoration: none;
+	color: white;
+}
+
+#python a:hover{
+	text-decoration: none;
+	color: black;
+}
