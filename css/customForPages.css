@@ -1,13 +1,72 @@
+section{
+	padding-bottom: 2%;
+	padding-top: 3.5%;
+}
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	section{
+		margin-bottom: 5%;
+		padding-top: 10%;
+	}
+
+}
+
+@font-face{
+    font-family: custom;
+    src: url('fonts/Raleway.ttf'),
+    	 url('fonts/Raleway.woff2') format('woff2'),
+         url('fonts/Raleway.woff') format('woff');
+}
+
+h4{
+	font-family: custom;
+	font-size: 20px;
+	letter-spacing: 1px;
+	/*word-spacing: 5px;*/
+}
+
+h1{
+	font-family: custom;
+	font-size: 40px;
+	letter-spacing: 1px;
+	/*word-spacing: 5px;*/
+}
+
+p{
+	font-family: custom;
+	font-size: 18px;
+}
+
+label{
+	font-family: custom;
+	font-size: 20px;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #EAECEE;
+    border-color: #EAECEE;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    background-color: #EAECEE;
+    border-color: #EAECEE;
+    font-size: 20px;
+}
+
 .navbar-default .navbar-nav  > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover {
-   	color: #FF7F50;
+    color: #9868C6;
 }
 
  .navbar-default .navbar-nav > .active > a, 
  .navbar-default .navbar-nav > .active > a:hover, 
  .navbar-default .navbar-nav > .active > a:focus {
-	color: #FF7F50;
-	background: #f9f9f9;
+	color: #ffffff;
+	background: #9868C6;
  }
+
 
 #myCarousel{
 	height:50%;
@@ -45,4 +104,111 @@
 
 .gallery{
     display: inline-block;
+}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+.header{
+	height: 40vh;
+	background-image: linear-gradient(rgba(107, 87, 170,0.9),rgba(107, 87, 170,0.9)),url(../images/background1.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	/*background-attachment:fixed;*/
+	position:relative;
+	padding-top: 5%;
+	color: white;
+}
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	.header{
+		height:40vh;
+		background-image: linear-gradient(rgba(107, 87, 170,0.8),rgba(107, 87, 170,0.8)),url(../images/background1.jpg);
+		background-size: cover;
+		background-position: center center;
+		position:relative;
+		margin-top: 3%;
+		padding-top: 8%;
+		color: white;
+	}
+
+	.col-sm-12{
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.nochange{
+		padding-top: 0;
+	}
+}
+
+#projects button{
+	border-radius:0; 
+	background-color: #9868C6; 
+	color: white;
+	margin-bottom: 10px; 
+}
+
+#projects button:hover{
+	border-radius:0; 
+	background-color: #9868C6; 
+	color: black;
+	margin-bottom: 10px; 
+}
+
+#projects p{
+	font-family: custom;
+	font-size: 16px;
+}
+
+.block:hover{
+	box-shadow: 10px 0px 40px rgba(0,0,0, .2);
+}
+
+.block{
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#resume a:hover{
+	text-decoration: none;
+	color: #9868C6;
+	font-size: 30px;
 }
