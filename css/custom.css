@@ -295,3 +295,16 @@ p, label{
 #contact a:hover{
 	color: #9868C6;
 }
+
+#contact .text-justify{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	#contact .text-justify{
+		padding-bottom: 20px;
+	}
+
+}
