@@ -173,12 +173,20 @@
 	    			<h2 class="section-heading"><?php  echo $SECTION_FOUR; ?></h2>
 	    			<hr style="max-width:50px;border-top: 2px solid #9868C6;">
 	    		</div><!-- ./column -->
+	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+	    			<i class="fa fa-code" style="font-size:40px;"></i>
+	    			<h4 class="text-justify">Need help in any code? Or don't know where to start? Just contact me and I'll make sure to ping you back with your solution.</h4>
+	    		</div>
+
+	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+	    			<i class="fa fa-terminal" style="font-size:40px;"></i>
+	    			<h4 class="text-justify">Beginner? Don't have enough problem statements to pratice? Try competitive programming, it will boost your programming skills to a whole other level.</h4>
+	    		</div>
 	    	</div><!-- ./row-->
 	    	<div style="padding-top: 3%;"></div>
 	    	<div class="row slideanim">
 	    		    <div class="col-md-1 col-xs-12 col-sm-12"></div>
 		    	    <div class="col-md-4 col-xs-12 col-sm-12">
-			    	      <h4>Contact me for any help, anytime. Also contact, if any suggestions.</h4>
 			    	      <p><span class="glyphicon glyphicon-map-marker"></span> Pune, Maharashtra, India</p>
 			    	      <p><span class="glyphicon glyphicon-phone"></span> +91 8087996634</p>
 			    	      <p><span class="glyphicon glyphicon-envelope"></span> omkarpathak27@gmail.com</p> 
