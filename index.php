@@ -50,7 +50,8 @@
 	    </nav>
 
 	    <div class="header text-center" id="home">
-	    		<h1>Omkar Pathak</h1>
+	    		<!-- <h1><span class="element"></span></h1><span class="typed-cursor"></span> -->
+	    		<h1>Omkar Pathak<span></span></h1>
 	    		<p><i><?php echo $JUMBOTRON_SUBHEADING; ?></i></p>
 	    		<br>
 	    		<div class="container text-justify">
@@ -62,6 +63,7 @@
 	    			<h4><a href="https://github.com/OmkarPathak/Python-Programs/" style="text-decoration: none; color: black;"><button class="btn btn-lg" id="jumbotron-button" style="border-radius:0;">Repository Link</button></a></h4>
 	    		</div>
 	    		<br>
+	    		<div id="check"></div>
 	    </div>
 
 	    <section id="<?php  echo $SECTION_ONE_ID; ?>" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
@@ -90,7 +92,7 @@
 	    	</div><!-- ./row-->
 
 	    	<div class="row">
-	    		<a href="view/aboutMe.php"><button class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 btn btn-lg" style="background: #9868C6; color: white; border-radius:0;">Know More About Me</button></a>
+	    		<a href="view/aboutMe.php"><button id="know" class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 btn btn-lg">Know More About Me</button></a>
 	    	</div><!-- ./row -->
 	    </section><!-- ./section-about -->
 
@@ -173,12 +175,12 @@
 	    			<h2 class="section-heading"><?php  echo $SECTION_FOUR; ?></h2>
 	    			<hr style="max-width:50px;border-top: 2px solid #9868C6;">
 	    		</div><!-- ./column -->
-	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center slideanim">
 	    			<i class="fa fa-code" style="font-size:40px;"></i>
 	    			<h4 class="text-justify">Need help in any code? Or don't know where to start? Just contact me and I'll make sure to ping you back with your solution.</h4>
 	    		</div>
 
-	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+	    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center slideanim">
 	    			<i class="fa fa-terminal" style="font-size:40px;"></i>
 	    			<h4 class="text-justify">Beginner? Don't have enough problem statements to pratice? Try competitive programming, it will boost your programming skills to a whole other level.</h4>
 	    		</div>
@@ -234,6 +236,7 @@
 	<!-- Custom JS -->
 	<script src="js/custom.js"></script>
 	<script src="js/bootstrap-notify.js"></script>
+	<script src="js/typed.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 		  // Add smooth scrolling to all links in navbar + footer link
@@ -268,6 +271,14 @@
 		                $('.navbar-collapse').collapse('toggle');
 		            }
 		      });
+		});
+
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > 400) {
+			$('.navbar').addClass('shrink');
+			}
+			else {
+			$('.navbar').removeClass('shrink'); }
 		});
 
 		$(window).scroll(function() {
@@ -312,6 +323,35 @@
 
 			return false;
 		});
+
+		$(document).ready(function(){       
+		   var scroll_start = 0;
+		   var startchange = $('#check');
+		   var offset = startchange.offset();
+		    if (startchange.length){
+			   $(document).scroll(function() { 
+			      scroll_start = $(this).scrollTop();
+			      if(scroll_start > offset.top) {
+			          $(".navbar-default").css('background-color', '#f0f0f0');
+			          $(".navbar-default .navbar-nav li a").css('color', 'black');
+			          $(".navbar-default .navbar-brand").css('color', 'black');
+			       } else {
+			          $('.navbar-default').css('background-color', 'transparent');
+			          $('.navbar-default .navbar-nav li a').css('color', 'white');
+			          $(".navbar-default .navbar-brand").css('color', 'white');
+			          $(".collapsed").css('color', 'black');
+			       }
+			   });
+		    }
+		});
+
+		// var typed3 = new Typed('.element', {
+		//    strings: ['Omkar Pathak'],
+		//    typeSpeed: 30,
+		//    backSpeed: 0,
+		//    smartBackspace: true, // this is a default
+		//    // loop: true,
+		//  });
 	</script>
 	</body>
 </html>
