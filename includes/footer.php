@@ -7,6 +7,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.fancybox.js"></script>
+    <script src="../js/typed.min.js"></script>
 
      <!-- Menu Toggle Script -->
     <script>
@@ -77,6 +78,14 @@
                   }       
                  });
               }
+
+      var typed3 = new Typed('.element', {
+         strings: ['SOME OF MY ACHIEVEMENTS', 'SOME OF MY PROJECTS', 'SOME OF MY ACADEMICS', 'SOME OF MY INTERNSHIPS'],
+         typeSpeed: 100,
+         backSpeed: 100,
+         smartBackspace: true, // this is a default
+         loop: true,
+       });
     </script>
 
 </body>
