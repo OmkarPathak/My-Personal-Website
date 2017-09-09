@@ -17,6 +17,23 @@ h4{
 	/*word-spacing: 5px;*/
 }
 
+/*#myName{
+	margin: 0px;
+	padding: 0px;
+	animation: typing-text 3s steps(13);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@keyframes	typing-text{
+	from{
+		width:0px;
+	}
+	to{
+		width:400px;
+	}
+}*/
+
 p, label{
 	font-family: custom;
 	font-size: 18px;
@@ -30,42 +47,87 @@ p, label{
 	}
 
 }
+
+#home span {
+	font-family: monospace;
+	font-size: 30px;
+}
+
+#home span:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 /*--------------------------------------------------------  NAVBAR/HEADER   ---------------------------------------------------*/
 .header{
-	height:95vh;
-	background-image: linear-gradient(rgba(107, 87, 170,0.9),rgba(107, 87, 170,0.9)),url(../images/background1.jpg);
+	height:100vh;
+	background-image: linear-gradient(rgba(107, 87, 170, 0.8),rgba(107, 87, 170, 0.8)),url(../images/background1.jpg);
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
 	/*background-attachment:fixed;*/
 	position:relative;
-	margin-top: 3%;
-	padding-top: 5%;
+	/*margin-top: 3%;*/
+	padding-top: 7%;
 	color: white;
 }
+/* navbar */
+.navbar-default{
+		text-transform: uppercase;
+		background-color: transparent;
+		color: white;
+		border: 0;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    font-size: 16px;
+	}
 
-@media only screen and (max-device-width: 480px) {
-  	/* define mobile specific styles come here */
-	.header{
-		height:110vh;
-		background-image: linear-gradient(rgba(107, 87, 170,0.8),rgba(107, 87, 170,0.8)),url(../images/background1.jpg);
-		background-size: cover;
-		background-position: center center;
-		/*-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-repeat:no-repeat;*/
-		/*background-attachment:fixed;*/
-		position:relative;
-		margin-top: 3%;
-		padding-top: 8%;
+	.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand{
 		color: white;
 	}
 
-}
+	.navbar-default .navbar-nav > li > a{
+	  text-decoration: none;
+	}
 
-/* navbar */
-.navbar-default {
+	.navbar-default .navbar-nav  > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	  border-bottom: 1px solid white;
+	  color: white;
+	}
+
+	/*.navbar-default > .active{
+	  border-bottom: 1px solid white;
+	  background: transparent;
+	}*/
+
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover {
+		color: white;
+		background: transparent;
+		border-bottom: 2px solid #9868C6;
+	}
+
+
+
+/*.navbar-default {
     background-color: #EAECEE;
     border-color: #EAECEE;
     font-size: 16px;
@@ -90,7 +152,35 @@ p, label{
 
 #navbar-links{
 	text-transform: uppercase;
+}*/
+
+@media only screen and (max-device-width: 480px) {
+  	/* define mobile specific styles come here */
+	.header{
+		height:110vh;
+		background-image: linear-gradient(rgba(107, 87, 170, 0.8),rgba(107, 87, 170, 0.8)),url(../images/background1.jpg);
+		background-size: cover;
+		background-position: center center;
+		position:relative;
+		/*margin-top: 3%;*/
+		padding-top: 10%;
+		color: white;
+	}
+
+	.navbar-default .navbar-collapse li a {
+		background-color: white;
+		color: black !important;
+	}
+
+	.navbar-toggle{
+		background-color: white;
+	}
+
+	.navbar-collapse{
+		background-color: white;
+	}
 }
+
 
 .jumbotron { 
    	margin-top: 3%;
@@ -145,6 +235,16 @@ p, label{
 	padding-top: 10px;
 }
 
+#know{
+	background: #9868C6; 
+	color: white; 
+	border-radius:0;
+}
+
+#know:hover{
+	color: black;
+}
+
 /* ------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------------*/
 
 #portfolio{
@@ -168,15 +268,17 @@ p, label{
 }
 
 #portfolio .btn {
-	margin: 15px 0;
-	background-color: #9868C6;
-	color: #fff;
+	border-radius:0; 
+	background-color: #9868C6; 
+	color: white;
+	margin-bottom: 10px;
 }
 
 #portfolio .btn:hover{
-	border: 1px solid #9868C6;
-	background-color: white;
-	color: #f4511e;
+	border-radius:0; 
+	background-color: #9868C6; 
+	color: black;
+	margin-bottom: 10px;
 }
 
 .panel {
