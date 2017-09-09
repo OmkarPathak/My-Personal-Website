@@ -3,8 +3,9 @@
 ;?>
       
       <div class="header text-center">
-        <h1>SOME OF MY ACHIEVEMENTS!</h1>
-        <h4>-Because everyone has a unique story..</h4>
+        <!-- <h1>SOME OF MY ACHIEVEMENTS!</h1> -->
+        <h1><span class="element"></span></h1><span class="typed-cursor"></span>
+        <i><h4>- Because everyone has a unique story..</h4></i>
       </div>
 
       <section id="highlights" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
@@ -131,6 +132,19 @@
           </div>
         </div> <!-- ./row -->
 
+        <div class="row" style="margin: 0">
+          <div class="col-md-4 col-lg-4 col-sm-12 co-xs-12 text-center block slideanim">
+            <label><b>Author of Python library 'pygorithm'</b></label>
+            <p class="text-justify" style="padding-top: 10px;">A Python library created to help students learn the implementation of Data Structures and all the major Algorithms.</p>
+            <a href="https://github.com/OmkarPathak/pygorithm"><button class="btn btn-lg">View</button></a>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 co-xs-12 text-center block slideanim">
+            <label><b>Garbage Level Monitoring System</b></label>
+            <p class="text-justify" style="padding-top: 10px;">My BE project that detects the garbage levels and volume of a bin and alerts the administrator when it is about to be full.</p>
+            <a href=""><button class="btn btn-lg">View</button></a>
+          </div>
+        </div> <!-- ./row -->
+
         <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center slideanim nochange" style="margin-top: 20px;">
                   <h2 class="section-heading">MINI PROJECTS</h2>
@@ -176,7 +190,7 @@
 
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
               <label><b>Web Development</b></label>
-              <p class="text-justify">PHP is the language in which this website is built on. I have also worked with MySQL, HTML, CSS, JavaScript, Ajax and JQuery.
+              <p class="text-justify">PHP is the language in which this website is built on. I have also worked with HTML, CSS, JavaScript, Ajax and JQuery.
             </div>
 
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
@@ -201,6 +215,23 @@
               <p class="text-justify">Okay, I am not a huge fan of C and C++ - but where the Python speed fails - C and C++ come to my rescue.</p>
             </div>
           </div> <!-- ./row -->
+
+          <div class="row" style="margin-top: 20px;">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
+              <label><b>Django/ Flask</b></label>
+              <p class="text-justify">These are the web frameworks I love to work with. The power of Python and exceptional speed makes it a preferable tool for web developers.</p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
+              <label><b>Laravel</b></label>
+              <p class="text-justify">Laravel is a PHP framework used to ease the work. I learnt this during my internship at SofttestLab. </p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
+              <label><b>MySQL</b></label>
+              <p class="text-justify">Databases are the core of any web app. MySQL is my preferred database due to its simplicity.</p>
+            </div>
+          </div> <!-- ./row -->
       </section><!-- ./section-education -->
 
       <section id="internships" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
@@ -208,7 +239,12 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center slideanim nochange">
                     <h2 class="section-heading">INTERNSHIPS</h2>
                     <hr style="max-width:50px; border-top: 2px solid #9868C6; margin-bottom: 0"><br>
-                    <p style="margin-top: 0;"><i>Working Experience</i></p>
+                    <p style="margin-top: 0;">
+                      <p>
+                        <i>Experience is a hard teacher because she gives the test first, the lesson afterward.</i>
+                      </p>
+                      <footer><cite title="Source Title"> -Vernon Law</cite></footer>
+                    </p><br>
                 </div><!-- ./column -->
           </div><!-- ./row -->
 
@@ -235,7 +271,7 @@
           
           <div class="row" style="margin: 0">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 slideanim text-center">
-              <a href="OmkarResume.pdf"><i class="fa fa-file-pdf-o" style="font-size:40px;"></i><p>Resume</p></a>
+              <a href="OmkarResume.pdf"  target="_blank"><i class="fa fa-file-pdf-o" style="font-size:40px;"></i><p>Resume</p></a>
             </div>
           </div> <!-- ./row -->
       </section> <!-- ./section-resume -->
