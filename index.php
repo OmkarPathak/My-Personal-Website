@@ -13,13 +13,14 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
-		
 		<!-- For Languages logos-->
 		<link rel="stylesheet" href="css/devicon.css">
 		<!-- If you want colored versions -->
 		<link rel="stylesheet" href="css/devicon-colors.css">
 		<!-- Font Awesome -->
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Captcha API-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="10">
 	<div id="main">
@@ -34,15 +35,15 @@
 				            <span class="icon-bar"></span>
 			          </button>
 		          <a class="navbar-brand" href="#home">
-		          				<?php 
-			          				getNavBrand('menu');			          			
-			          			?>       		
+		          				<?php
+			          				getNavBrand('menu');
+			          			?>
 		         </a>
 		        </div><!-- ./navbar-header-->
 		        <div id="navbar" class="navbar-collapse collapse">
 			          <ul class="nav navbar-nav" id="navbar-links">
 			          		<?php
-			          			getMenu('menu'); 
+			          			getMenu('menu');
 			          		 ?>
 			          </ul>
 		        </div><!--/.nav-collapse -->
@@ -109,7 +110,7 @@
 		    	    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 slideanim">
 		    	    		<div class="panel panel-default text-center">
 		    	    		        <div class="panel-heading">
-		    	    		          	<p><h3>Photography</h3></p>
+		    	    		          	<p><h3>PHOTOGRAPHY</h3></p>
 		    	    		        </div><!-- ./panel-heading-->
 		    	    		        <div class="panel-body">
 		    	    		          		<img class="img-responsive fixed-image" src="images/<?php echo $PHOTOGRAPGY_IMAGE; ?>" alt="Photography">
@@ -123,7 +124,7 @@
 		    	    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 slideanim">
 		    	    		<div class="panel panel-default text-center">
 		    	    		        <div class="panel-heading">
-		    	    		          	<p><h3>Sketching</h3></p>
+		    	    		          	<p><h3>SKETCHING</h3></p>
 		    	    		        </div><!-- ./panel-heading-->
 		    	    		        <div class="panel-body">
 		    	    		          		<img class="img-responsive fixed-image" src="images/<?php echo $SKETCHING_IMAGE; ?>" alt="Sketching">
@@ -161,7 +162,7 @@
 	    		<div class="col-md-2 col-lg-2"></div>
 	    		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 	    			<div class="panel-group">
-	    			<?php 
+	    			<?php
 	    				// getPosts('posts');
 	    			 ?>
 	    			</div> --><!-- ./panel-group -->
@@ -191,7 +192,7 @@
 		    	    <div class="col-md-4 col-xs-12 col-sm-12">
 			    	      <p><span class="glyphicon glyphicon-map-marker"></span> Pune, Maharashtra, India</p>
 			    	      <p><span class="glyphicon glyphicon-phone"></span> +91 8087996634</p>
-			    	      <p><span class="glyphicon glyphicon-envelope"></span> omkarpathak27@gmail.com</p> 
+			    	      <p><span class="glyphicon glyphicon-envelope"></span> omkarpathak27@gmail.com</p>
 			    	      <label>Follow Me:</label>
 			    	      <div class="col-md-12 col-lg-12" style="margin: 0; padding: 0">
 				    	      <span class="input-group">
@@ -219,6 +220,7 @@
 				    	        </div>
 				      </div><!-- ./row-->
 				      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                      <div class="g-recaptcha" data-sitekey="6Lf8WjIUAAAAAB1ZeXRRfAQ4fy6II2g-z2oB4X6a"></div><br>
 				       <div class="row">
 				    	        <div class="col-sm-12 form-group">
 				    	          <button name="Submit" class="btn btn-primary btn-lg pull-right" type="submit">Send</button>
@@ -264,9 +266,9 @@
 		  });
 		})
 
-		$(document).ready(function() { 
+		$(document).ready(function() {
 		    $("body").click(function(event) {
-		            // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called 
+		            // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called
 		             if ($(".navbar-collapse").is(":visible") && $(".navbar-toggle").is(":visible") ) {
 		                $('.navbar-collapse').collapse('toggle');
 		            }
@@ -303,7 +305,7 @@
 
 				data[name] = value;
 			});
-			
+
 			$.ajax({
 				url: "includes/mail.php",
 				method: 'POST',
@@ -324,12 +326,12 @@
 			return false;
 		});
 
-		$(document).ready(function(){       
+		$(document).ready(function(){
 		   var scroll_start = 0;
 		   var startchange = $('#check');
 		   var offset = startchange.offset();
 		    if (startchange.length){
-			   $(document).scroll(function() { 
+			   $(document).scroll(function() {
 			      scroll_start = $(this).scrollTop();
 			      if(scroll_start > offset.top) {
 			          $(".navbar-default").css('background-color', '#f0f0f0');
