@@ -1,7 +1,7 @@
-<?php  
+<?php
   include('../includes/headerForPosts.php');
 ;?>
-      
+
       <div class="header text-center">
         <!-- <h1>SOME OF MY ACHIEVEMENTS!</h1> -->
         <h1><span class="element"></span></h1><span class="typed-cursor"></span>
@@ -15,7 +15,7 @@
                     <hr style="max-width:50px;border-top: 2px solid #9868C6;"><br>
                 </div><!-- ./column -->
           </div><!-- ./row -->
-          
+
           <div class="row" style="margin: 0">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 slideanim nochange">
               <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 text-center">
@@ -56,7 +56,7 @@
                     <hr style="max-width:50px;border-top: 2px solid #9868C6;"><br>
                 </div><!-- ./column -->
           </div><!-- ./row -->
-          
+
           <div class="row" style="margin: 0">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 slideanim">
               <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
@@ -111,7 +111,7 @@
                   <hr style="max-width:50px;border-top: 2px solid #9868C6;"><br>
               </div><!-- ./column -->
         </div><!-- ./row -->
-        
+
         <div class="row" style="margin: 0">
           <div class="col-md-4 col-lg-4 col-sm-12 co-xs-12 text-center block slideanim">
             <label><b>Smart Surveillance System using Raspberry Pi and Face recognition</b></label>
@@ -138,10 +138,19 @@
             <p class="text-justify" style="padding-top: 10px;">A Python library created to help students learn the implementation of Data Structures and all the major Algorithms.</p>
             <a href="https://github.com/OmkarPathak/pygorithm"><button class="btn btn-lg">View</button></a>
           </div>
+
           <div class="col-md-4 col-lg-4 col-sm-12 co-xs-12 text-center block slideanim">
             <label><b>Garbage Level Monitoring System</b></label>
             <p class="text-justify" style="padding-top: 10px;">My BE project that detects the garbage levels and volume of a bin and alerts the administrator when it is about to be full.</p>
             <a href=""><button class="btn btn-lg">View</button></a>
+          </div>
+
+          <div class="col-md-4 col-lg-4 col-sm-12 co-xs-12 text-center block slideanim">
+            <label><b>A Simple Note taking Web App</b></label>
+            <p class="text-justify" style="padding-top: 10px;">
+                A simple note taking web app using Flask and Python. Many features such as REST api to get data, AJAX searching for quick note searching.
+            </p>
+            <a href="https://github.com/OmkarPathak/A-Simple-Note-Taking-Web-App"><button class="btn btn-lg">View</button></a>
           </div>
         </div> <!-- ./row -->
 
@@ -181,7 +190,7 @@
                     <p style="margin-top: 0;"><i>These are the technologies I have worked with throughout my curriculum</i></p>
                 </div><!-- ./column -->
           </div><!-- ./row -->
-          
+
           <div class="row" style="margin-top: 20px;">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text-center slideanim">
               <label><b>Python</b></label>
@@ -268,12 +277,12 @@
                     <hr style="max-width:50px;border-top: 2px solid #9868C6;"><br>
                 </div><!-- ./column -->
           </div><!-- ./row -->
-          
+
           <div class="row" style="margin: 0">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 slideanim text-center">
               <a href="OmkarResume.pdf"  target="_blank"><i class="fa fa-file-pdf-o" style="font-size:40px;"></i><p>Resume</p></a>
             </div>
           </div> <!-- ./row -->
       </section> <!-- ./section-resume -->
-      
+
 <?php  include('../includes/footer.php');?>
